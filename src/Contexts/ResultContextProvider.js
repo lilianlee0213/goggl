@@ -31,3 +31,6 @@ export const ResultContextProvider = ({children}) => {
 		);
 	};
 };
+
+//create a function to easily use the values from the context
+export const useResultsContext = () => useContext(ResultContext);
