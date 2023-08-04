@@ -8,7 +8,7 @@ export const ResultContextProvider = ({children}) => {
 	const [isLoading, setIsLoading] = useState(false);
 	const [searchTerm, setSearchTerm] = useState('');
 
-	// --> type(url) : /search /searchimage
+	// --> type(url) : /search /imagesearch
 	const getResults = async (type) => {
 		setIsLoading(true);
 		//api call
