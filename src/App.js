@@ -1,9 +1,16 @@
 import React from 'react';
+import Navbar from './Components/Navbar';
+import Routes from './Components/Routes';
+import Footer from './Components/Footer';
 
 const App = () => {
 	return (
 		<div>
-			<h1>App</h1>
+			<div>
+				<Navbar />
+				<Routes />
+				<Footer />
+			</div>
 		</div>
 	);
 };
