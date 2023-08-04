@@ -23,13 +23,13 @@ export const ResultContextProvider = ({children}) => {
 
 		setResults(data);
 		setIsLoading(false);
-		return (
-			<ResultContext.Provider
-				value={(getResults, results, searchTerm, setSearchTerm, isLoading)}>
-				{children}
-			</ResultContext.Provider>
-		);
 	};
+	return (
+		<ResultContext.Provider
+			value={{getResults, results, searchTerm, setSearchTerm, isLoading}}>
+			{children}
+		</ResultContext.Provider>
+	);
 };
 
 //create a function to easily use the values from the context
