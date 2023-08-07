@@ -20,7 +20,6 @@ export const ResultContextProvider = ({children}) => {
 			},
 		});
 		const data = await response.json();
-
 		setResults(data);
 		setIsLoading(false);
 	};
